@@ -18,7 +18,7 @@ public record UserDto(
         @NotBlank(message = "email не должен быть пустым")
         String email,
 
-        @Min(value = 0, message = "возраст не может быть меньше 0")
+        @Min(value = 0, message = "возраст  не может быть меньше 0")
         @Max(value = 100, message = "возраст должен быть реалистичным")
         Integer age,
 
